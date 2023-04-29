@@ -5,9 +5,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProfModule } from './prof/prof.module';
 import { Prof } from './prof/entity/prof.entity';
 import { StudnetModule } from './studnet/studnet.module';
-import { Student } from './studnet/entity/student.entity';
+import { Student } from './student/entity/student.entity';
 import { LectureModule } from './lecture/lecture.module';
 import { Lecture } from './lecture/entity/lecture.entity';
+import { StudentModule } from './student/student.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -23,6 +24,7 @@ import { Lecture } from './lecture/entity/lecture.entity';
   ProfModule,
   StudnetModule,
   LectureModule,
+  StudentModule,
   ],
   controllers: [AppController],
   providers: [AppService],
