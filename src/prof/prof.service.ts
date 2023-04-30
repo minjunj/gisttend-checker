@@ -15,14 +15,15 @@ export class ProfService {
     ) {}
 
     async postInfo(profdto:ProfDto): Promise<any> {
-        const { name } = profdto;
+        const { name, prof_id } = profdto;
 
-        const found = await this.profRepository.findOneBy({name : name});
+        const found = await this.profRepository.findOneBy({name : name, prof_id : prof_id});
 
         if(!found){
             await this.profRepository.insert([
                 {
-                    name : name
+                    name : name,
+                    prof_id : prof_id
                 }
             ])
         }

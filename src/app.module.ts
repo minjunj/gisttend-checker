@@ -8,6 +8,7 @@ import { Student } from './student/entity/student.entity';
 import { LectureModule } from './lecture/lecture.module';
 import { Lecture } from './lecture/entity/lecture.entity';
 import { StudentModule } from './student/student.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -24,6 +25,7 @@ import { StudentModule } from './student/student.module';
   StudentModule,
   LectureModule,
   StudentModule,
+  UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
