@@ -9,6 +9,9 @@ export class Prof{
     @Column()
     name: string;
 
+    @Column()
+    prof_id : string;
+
     @OneToMany((Type) => Lecture, (lecture) => lecture.prof, { eager : true})
     lectures: Lecture[];
 }
