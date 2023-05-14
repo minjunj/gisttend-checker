@@ -16,7 +16,7 @@ import { UserModule } from './user/user.module';
     host: 'localhost',
     port: 3306,
     username: 'root',
-    password: '12345678',
+    password: '1234', 
     database: 'gisttend',
     entities: [Prof, Student, Lecture],
     synchronize: true,
