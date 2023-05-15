@@ -13,10 +13,10 @@ import { UserModule } from './user/user.module';
 @Module({
   imports: [TypeOrmModule.forRoot({
     type: 'mysql',
-    host: 'mysql-container',
+    host: 'mysql',
     port: 3306,
-    username: 'root',
-    password: 'test1234', 
+    username: 'acdc',
+    password: '1234', 
     database: 'gisttend',
     entities: [Prof, Student, Lecture],
     synchronize: true,
