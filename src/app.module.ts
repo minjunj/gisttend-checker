@@ -16,7 +16,7 @@ import { UserModule } from './user/user.module';
     host: 'mysql-container',
     port: 3306,
     username: 'root',
-    password: '1234', 
+    password: 'test1234', 
     database: 'gisttend',
     entities: [Prof, Student, Lecture],
     synchronize: true,
